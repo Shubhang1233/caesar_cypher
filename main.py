@@ -39,13 +39,13 @@ print(logo)
 
 u_input = False
 while not u_input:
-    # Asking to encrypt or decrypt the message
+    # Asking for the input from the user if they want to encrypt or decrypt the message.
     direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
-    # Receiving the message
+    # Receiving the message as an input by the user.
     text = input("Type your message:\n").lower()
     # Asking for the no. of shift amount
     shift = int(input("Type the shift number:\n"))
-    # Making sure that the shift does not exceed the no. of alphabets
+    # Making sure that the shift does not exceed the no. of alphabets in the list.
     shift = shift % 26
     # Calling the function
     caesar(text, shift, direction)
